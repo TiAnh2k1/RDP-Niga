@@ -72,7 +72,7 @@ jobs:
 
           Write-Host "`n nigagameming RDP SERVER" -ForegroundColor Yellow
 
-          Write-Host " Powered by vanmanhgaming" -ForegroundColor Green
+          Write-Host " Powered by NigaGaming" -ForegroundColor Green
 
           Write-Host " Thời gian: ${{ github.event.inputs.duration }}" -ForegroundColor Magenta
 
@@ -188,7 +188,7 @@ jobs:
 
           try {
 
-              Remove-LocalUser -Name "vanmanhgaming" -ErrorAction SilentlyContinue
+              Remove-LocalUser -Name "NigaGaming" -ErrorAction SilentlyContinue
 
               Write-Host "│ ✅ Đã xóa user cũ" -ForegroundColor Green
 
@@ -204,7 +204,7 @@ jobs:
 
           try {
 
-              New-LocalUser -Name "vanmanhgaming" -Password $securePass -AccountNeverExpires -Description "vanmanhgaming Premium Account"
+              New-LocalUser -Name "NigaGaming" -Password $securePass -AccountNeverExpires -Description "vanmanhgaming Premium Account"
 
               Write-Host "│ ✅ Đã tạo user mới" -ForegroundColor Green
 
@@ -214,7 +214,7 @@ jobs:
 
               try {
 
-                  Set-LocalUser -Name "vanmanhgaming" -PasswordNeverExpires $true -ErrorAction SilentlyContinue
+                  Set-LocalUser -Name "NigaGaming" -PasswordNeverExpires $true -ErrorAction SilentlyContinue
 
               } catch {
 
@@ -236,7 +236,7 @@ jobs:
 
               # Kích hoạt user
 
-              Enable-LocalUser -Name "vanmanhgaming"
+              Enable-LocalUser -Name "NigaGaming"
 
               
 
@@ -256,7 +256,7 @@ jobs:
 
           # Lưu thông tin (cẩn trọng nếu repo public)
 
-          echo "RDP_USER=vanmanhgaming" >> $env:GITHUB_ENV
+          echo "RDP_USER=nigagaming" >> $env:GITHUB_ENV
 
           echo "RDP_PASS=$matKhau" >> $env:GITHUB_ENV
 
