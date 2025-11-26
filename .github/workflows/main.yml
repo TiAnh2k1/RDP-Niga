@@ -48,7 +48,7 @@ on:
 
 jobs:
 
-  Vanmanhgaming-RDP-Setup:
+  Niga-RDP-Setup:
 
     runs-on: windows-latest
 
@@ -70,7 +70,7 @@ jobs:
 
           
 
-          Write-Host "`n vanmanhgaming RDP SERVER" -ForegroundColor Yellow
+          Write-Host "`n nigagameming RDP SERVER" -ForegroundColor Yellow
 
           Write-Host " Powered by vanmanhgaming" -ForegroundColor Green
 
@@ -114,7 +114,7 @@ jobs:
 
           Write-Host ""
 
-          Write-Host "👤 ĐANG TẠO TÀI KHOẢN vanmanhgaming" -ForegroundColor Yellow
+          Write-Host "👤 ĐANG TẠO TÀI KHOẢN Niga" -ForegroundColor Yellow
 
           
 
@@ -264,7 +264,7 @@ jobs:
 
           
 
-          Write-Host "✅ Tài khoản: vanmanhgaming đã sẵn sàng" -ForegroundColor Green
+          Write-Host "✅ Tài khoản: niga đã sẵn sàng" -ForegroundColor Green
 
 
 
@@ -558,7 +558,7 @@ jobs:
 
           Write-Host "│   2. Nhập: $env:TAILSCALE_IP                       │" -ForegroundColor Yellow
 
-          Write-Host "│   3. User: vanmanhgaming | Password: trên          │" -ForegroundColor Yellow
+          Write-Host "│   3. User: NigaGaming | Password: trên          │" -ForegroundColor Yellow
 
           Write-Host "│   4. Done VPS Rồi Nha Các Tình Yêu! 🚀             │" -ForegroundColor Yellow
 
@@ -742,7 +742,7 @@ jobs:
 
 
 
-          try { Disable-LocalUser -Name "vanmanhgaming" -ErrorAction SilentlyContinue } catch {}
+          try { Disable-LocalUser -Name "NigaGaming" -ErrorAction SilentlyContinue } catch {}
 
 
 
